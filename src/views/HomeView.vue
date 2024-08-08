@@ -173,21 +173,15 @@
     </v-row>
     <div class="misa7a"></div>
     <v-row>
-      <v-col cols="4" class="poi">
-        <v-btn color="#684b06" class="nbv">Fix</v-btn>
-      </v-col>
+      <v-col cols="4" class="poi"> </v-col>
 
-      <v-col cols="4" class="lkj">
-        <v-btn color="#684b06" class="nbv">Sell</v-btn>
-      </v-col>
-
-      <v-col cols="4">
-        <v-btn color="#684b06" class="nbv">Buy</v-btn>
-      </v-col>
+      <v-col cols="4" class="lkj"> </v-col>
     </v-row>
-    <div class="jhg"></div>
     <v-row>
-      <v-col cols="4">
+      <v-col cols="12" sm="6" lg="4" md="4">
+        <v-btn color="#684b06" class="nbv">Fix</v-btn>
+        <div class="jhg"></div>
+
         <h3>Describe</h3>
         <v-textarea
           variant="outlined"
@@ -205,7 +199,10 @@
         <v-btn @click="validate" color="#2531609e"> Send</v-btn>
         <div class="Success">{{ Send }}</div>
       </v-col>
-      <v-col cols="4">
+      <v-col cols="12" sm="6" lg="4" md="4">
+        <v-btn color="#684b06" class="nbv">Sell</v-btn>
+        <div class="jhg"></div>
+
         <h3>Let Us Discover it</h3>
         <v-file-input
           v-model="upload"
@@ -221,8 +218,11 @@
         <v-btn @click="done" color="#2531609e"> Send</v-btn>
         <div class="Success">{{ Sendk }}</div>
       </v-col>
-      <v-col cols="4">
+      <v-col cols="12" sm="6" lg="4" md="4">
         <div>
+          <v-btn color="#684b06" class="nbv">Buy</v-btn>
+          <div class="jhg"></div>
+
           <p class="Discover">Take a look i you don't Yet</p>
 
           <router-link to="/stock">
